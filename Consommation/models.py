@@ -23,4 +23,4 @@ class Utilisateur(AbstractUser):
     USERNAME_FIELD = 'nom_utilisateur'
     SUPERUSER_FIELD = 'est_admin'
 
-    service = models.ForeignKey(Service, on_delete=models.CASCADE)
+    service = models.ForeignKey(Service, on_delete=models.CASCADE, null=True, blank=True)

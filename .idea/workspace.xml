@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7d8566-befd-4a52-973b-147154cea2f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Consommation/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Consommation/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Consom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consom/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consom/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consommation/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consommation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conso.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/conso.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,13 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -24,17 +36,21 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2nfJUuVQSAEfooYOFn21ushJGaE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Django Server.Consom.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
     "Notification.DoNotAsk-Database detector": "true",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "feature/auth",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
@@ -59,6 +75,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="Consom.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -95,7 +112,8 @@
       <updated>1729358215902</updated>
       <workItem from="1729358236900" duration="2497000" />
       <workItem from="1729360789729" duration="553000" />
-      <workItem from="1729379033192" duration="1260000" />
+      <workItem from="1729379033192" duration="2424000" />
+      <workItem from="1729383580365" duration="1365000" />
     </task>
     <servers />
   </component>
