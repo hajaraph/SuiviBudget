@@ -35,12 +35,12 @@ class Consommable(models.Model):
 class Stock(models.Model):
     id_stock = models.AutoField(primary_key=True)
     quantite_stock = models.IntegerField(default=0)
-    date_maj_stock = models.DateField(auto_now=True, auto_now_add=True)
+    date_maj_stock = models.DateField(auto_now=True)
     consommable = models.ForeignKey(Consommable, on_delete=models.CASCADE)
 
 
 class Consommation(models.Model):
     id_conso = models.AutoField(primary_key=True)
-    date_conso = models.DateField(auto_now=True, auto_now_add=True)
+    date_conso = models.DateField(auto_now=True)
     quantite_conso = models.IntegerField(default=0)
     stock = models.ForeignKey(Stock, on_delete=models.CASCADE)
