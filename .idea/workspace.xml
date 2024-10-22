@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d8566-befd-4a52-973b-147154cea2f3" name="Changes" comment="" />
+    <list default="true" id="6a7d8566-befd-4a52-973b-147154cea2f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consom/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consommation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consommation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consommation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consommation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conso.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/conso.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -32,12 +45,20 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="feature/service" />
+                    <option name="lastUsedInstant" value="1729615024" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="develop" />
-                    <option name="lastUsedInstant" value="1729614526" />
+                    <option name="lastUsedInstant" value="1729614995" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1729614758" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/auth" />
-                    <option name="lastUsedInstant" value="1729614525" />
+                    <option name="lastUsedInstant" value="1729614645" />
                   </RecentBranch>
                 </list>
               </option>
@@ -69,7 +90,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/service",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -135,7 +156,7 @@
       <workItem from="1729527989362" duration="9819000" />
       <workItem from="1729612722896" duration="695000" />
       <workItem from="1729613499144" duration="119000" />
-      <workItem from="1729613750267" duration="784000" />
+      <workItem from="1729613750267" duration="4508000" />
     </task>
     <servers />
   </component>
