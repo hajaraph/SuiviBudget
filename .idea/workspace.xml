@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7d8566-befd-4a52-973b-147154cea2f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Consommation/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Consommation/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Consommation/migrations/0003_utilisateur_id_alter_utilisateur_nom_utilisateur_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d8a2cdb1-f05b-433a-8aa4-2ee173657cb9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d8a2cdb1-f05b-433a-8aa4-2ee173657cb9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consom/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consom/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consommation/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consommation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consommation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Consommation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Consommation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conso.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/conso.sqlite3" afterDir="false" />
     </list>
@@ -43,30 +43,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.Consom.executor": "Run",
-    "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
-    "Notification.DoNotAsk-Database detector": "true",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feature/auth",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.Consom.executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,
+    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/auth&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Consom" type="Python.DjangoServer" factoryName="Django server">
       <module name="Consom" />
@@ -113,11 +114,26 @@
       <workItem from="1729358236900" duration="2497000" />
       <workItem from="1729360789729" duration="553000" />
       <workItem from="1729379033192" duration="2424000" />
-      <workItem from="1729383580365" duration="1365000" />
+      <workItem from="1729383580365" duration="2599000" />
+      <workItem from="1729527989362" duration="9819000" />
+      <workItem from="1729612722896" duration="695000" />
+      <workItem from="1729613499144" duration="119000" />
+      <workItem from="1729613750267" duration="433000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

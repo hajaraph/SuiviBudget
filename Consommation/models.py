@@ -7,8 +7,8 @@ class Service(models.Model):
 
 
 class Utilisateur(AbstractUser):
-    nom_utilisateur = models.CharField(max_length=50, primary_key=True)
-    numero_utilisateur = models.CharField(max_length=10)
+    nom_utilisateur = models.CharField(max_length=50, unique=True)
+    numero_utilisateur = models.CharField(max_length=10, unique=True)
     est_admin = models.BooleanField(default=False)
 
     first_name = None
