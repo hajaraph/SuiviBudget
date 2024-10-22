@@ -24,3 +24,23 @@ class Utilisateur(AbstractUser):
     SUPERUSER_FIELD = 'est_admin'
 
     service = models.ForeignKey(Service, on_delete=models.CASCADE, null=True, blank=True)
+
+
+class Consommable(models.Model):
+    id_consommable = models.AutoField(primary_key=True)
+    nom_consommable = models.CharField(max_length=80)
+    categorie = models.CharField(max_length=80)
+
+
+class Stock(models.Model):
+    id_stock = models.AutoField(primary_key=True)
+    quantite_stock = models.IntegerField(default=0)
+    date_maj_stock = models.DateField(auto_now=True, auto_now_add=True)
+    consommable = models.ForeignKey(Consommable, on_delete=models.CASCADE)
+
+
+class Consommation(models.Model):
+    id_conso = models.AutoField(primary_key=True)
+    date_conso = models.DateField(auto_now=True, auto_now_add=True)
+    quantite_conso = models.IntegerField(default=0)
+    stock = models.ForeignKey(Stock, on_delete=models.CASCADE)
