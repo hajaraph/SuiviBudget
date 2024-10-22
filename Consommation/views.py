@@ -1,9 +1,13 @@
 from django.contrib.auth import get_user_model
-from rest_framework import generics
+from django.shortcuts import get_object_or_404
+from rest_framework import generics, status
 from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
+from rest_framework.views import APIView
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-from Consommation.serializers import UserSerializer
+from Consommation.models import Service
+from Consommation.serializers import UserSerializer, ServiceSerializer
 
 
 class CustomTokenObtainPairView(TokenObtainPairView):
@@ -25,3 +29,41 @@ class CustomTokenObtainPairView(TokenObtainPairView):
 class Inscrire(generics.CreateAPIView):
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
+
+
+class ServiceView(APIView):
+    permission_classes = [AllowAny]
+
+    @staticmethod
+    def get(request, pk=None):
+        if pk:
+            service = get_object_or_404(Service, pk=pk)
+            serializer = ServiceSerializer(service)
+            return Response(serializer.data)
+        else:
+            services = Service.objects.all()
+            serializer = ServiceSerializer(services, many=True)
+            return Response(serializer.data)
+
+    @staticmethod
+    def post(request):
+        serializer = ServiceSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    @staticmethod
+    def put(request, pk=None):
+        service = get_object_or_404(Service, pk=pk)
+        serializer = ServiceSerializer(service, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    @staticmethod
+    def delete(request, pk=None):
+        service = get_object_or_404(Service, pk=pk)
+        service.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
