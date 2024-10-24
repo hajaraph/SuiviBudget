@@ -37,6 +37,7 @@ class Stock(models.Model):
     quantite_stock = models.IntegerField(default=0)
     date_maj_stock = models.DateField(auto_now=True)
     consommable = models.ForeignKey(Consommable, on_delete=models.CASCADE)
+    utilisateur = models.ForeignKey(Utilisateur, on_delete=models.CASCADE)
 
 
 class Consommation(models.Model):
