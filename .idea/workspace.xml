@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7d8566-befd-4a52-973b-147154cea2f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Consom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Consom.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consommation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consommation/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consommation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consommation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Consommation/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conso.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/conso.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -140,8 +137,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.22855.92" />
-        <option value="bundled-python-sdk-b068d85d1acf-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.22855.92" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
@@ -165,6 +162,21 @@
       <workItem from="1729745629239" duration="124000" />
       <workItem from="1729746388310" duration="561000" />
       <workItem from="1729749428753" duration="71000" />
+      <workItem from="1729790108657" duration="188000" />
+      <workItem from="1729790399379" duration="1606000" />
+      <workItem from="1729812307508" duration="194000" />
+      <workItem from="1729834299882" duration="58000" />
+      <workItem from="1729834410304" duration="136000" />
+      <workItem from="1729916674581" duration="1226000" />
+      <workItem from="1729922300719" duration="886000" />
+      <workItem from="1729923330083" duration="152000" />
+      <workItem from="1729923543393" duration="117000" />
+      <workItem from="1729923695944" duration="59000" />
+      <workItem from="1729923792189" duration="71000" />
+      <workItem from="1729928457659" duration="19000" />
+      <workItem from="1730011192576" duration="57000" />
+      <workItem from="1730011289678" duration="28000" />
+      <workItem from="1730011338802" duration="341000" />
     </task>
     <servers />
   </component>
