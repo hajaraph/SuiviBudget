@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework_simplejwt.views import TokenRefreshView
 
-from Consommation.views import Inscrire, CustomTokenObtainPairView, ServiceView, ConsommableView
+from Consommation.views import Inscrire, CustomTokenObtainPairView, ServiceView, ConsommableView, StockView
 
 urlpatterns = [
     path('connexion', CustomTokenObtainPairView.as_view(), name='token_obtain_pair'),
@@ -13,4 +13,5 @@ urlpatterns = [
     path('consommable', ConsommableView.as_view()),
     path('consommable/update/<int:pk>', ConsommableView.as_view()),
     path('consommable/delete/<int:pk>', ConsommableView.as_view()),
+    path('stock', StockView.as_view()),
 ]

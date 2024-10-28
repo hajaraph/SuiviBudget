@@ -44,4 +44,6 @@ class Consommation(models.Model):
     id_conso = models.AutoField(primary_key=True)
     date_conso = models.DateField(auto_now=True)
     quantite_conso = models.IntegerField(default=0)
+    service = models.ForeignKey(Service, on_delete=models.CASCADE)
     stock = models.ForeignKey(Stock, on_delete=models.CASCADE)
+    utilisateur = models.ForeignKey(Utilisateur, on_delete=models.CASCADE)

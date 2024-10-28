@@ -1,8 +1,9 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
+from django.utils import timezone
 from rest_framework import serializers
 
-from Consommation.models import Service, Consommable
+from Consommation.models import Service, Consommable, Stock, Consommation
 
 Utilisateur = get_user_model()
 
@@ -13,7 +14,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Utilisateur
-        fields = ('nom_utilisateur', 'password', 'password_confirm', 'est_admin', 'numero_utilisateur', 'service')
+        fields = ('id', 'nom_utilisateur', 'password', 'password_confirm', 'est_admin', 'numero_utilisateur', 'service')
 
     def validate(self, attrs):
         if attrs['password'] != attrs['password_confirm']:
@@ -43,7 +44,7 @@ class ServiceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Service
-        fields = ('nom_service',)
+        fields = '__all__'
 
     def create(self, validated_data):
         return Service.objects.create(
@@ -61,7 +62,7 @@ class ConsommableSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Consommable
-        fields = ('nom_consommable', 'categorie')
+        fields = '__all__'
 
     def create(self, validated_data):
         return Consommable.objects.create(
@@ -78,4 +79,40 @@ class ConsommableSerializer(serializers.ModelSerializer):
 
 class StockSerializer(serializers.ModelSerializer):
     quantite_stock = serializers.IntegerField(required=True)
-    consommable = serializers.IntegerField(required=True)
+    consommable = serializers.PrimaryKeyRelatedField(
+        queryset=Consommable.objects.all(),
+        write_only=True
+    )
+    consommable_detail = ConsommableSerializer(source='consommable', read_only=True)
+
+    class Meta:
+        model = Stock
+        fields = '__all__'
+
+    def create(self, validated_data):
+        quantite_stock = validated_data['quantite_stock']
+        consommable = validated_data['consommable']
+        utilisateur = validated_data.get('utilisateur')
+
+        stock_up, created = Stock.objects.get_or_create(
+            consommable=consommable,
+            defaults={
+                'quantite_stock': quantite_stock,
+                'utilisateur': utilisateur
+            }
+        )
+
+        if not created:
+            stock_up.quantite_stock += quantite_stock
+            stock_up.date_maj_stock = timezone.now()
+            stock_up.utilisateur = utilisateur
+            stock_up.save()
+
+        return stock_up
+
+
+class ConsommationSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Consommation
+        fields = '__all__'

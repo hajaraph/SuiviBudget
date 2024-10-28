@@ -1,5 +1,4 @@
 from django.contrib.auth import get_user_model
-from django.core.serializers import serialize
 from django.shortcuts import get_object_or_404
 from rest_framework import generics, status
 from rest_framework.permissions import AllowAny
@@ -7,8 +6,8 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-from Consommation.models import Service, Consommable
-from Consommation.serializers import UserSerializer, ServiceSerializer, ConsommableSerializer
+from Consommation.models import Service, Consommable, Stock
+from Consommation.serializers import UserSerializer, ServiceSerializer, ConsommableSerializer, StockSerializer
 
 
 class CustomTokenObtainPairView(TokenObtainPairView):
@@ -106,3 +105,35 @@ class ConsommableView(APIView):
         consommable = get_object_or_404(Consommable, pk=pk)
         consommable.delete()
         return Response({"message": "Supprimer avec succès !"}, status=status.HTTP_204_NO_CONTENT)
+
+
+class StockView(APIView):
+    permission_classes = [AllowAny]
+
+    @staticmethod
+    def get(request, pk=None):
+        if pk:
+            stock = get_object_or_404(Stock, pk=pk)
+            serializer = StockSerializer(stock)
+            return Response(serializer.data)
+        else:
+            stocks = Stock.objects.all()
+            serializer = StockSerializer(stocks, many=True)
+            return Response(serializer.data)
+
+
+    @staticmethod
+    def post(request):
+        serializer = StockSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({
+                "message": "Stock ajouté ou mis à jour avec succès."
+            }, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    @staticmethod
+    def delete(request, pk=None):
+        stock = get_object_or_404(Stock, pk=pk)
+        stock.delete()
+        return Response({"message": "Stock supprimé avec succès !"}, status=status.HTTP_204_NO_CONTENT)
