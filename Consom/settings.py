@@ -62,11 +62,18 @@ TEMPLATES = [
 # WSGI application
 WSGI_APPLICATION = "Consom.wsgi.application"
 
-# Base de données (SQLite par défaut)
 DATABASES = {
+     # "default": {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'conso.sqlite3',
+    # }
     "default": {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'conso.sqlite3',
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'budget',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST': 'localhost',
+            'PORT': '3306'
     }
 }
 
